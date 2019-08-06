@@ -1,0 +1,31 @@
+package newStart;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Yahoo {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "E:\\Classes\\Set up\\geckodriver-v0.24.0-win64.zip\\geckodriver-v0.24.0-win64");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://in.yahoo.com/");
+		//driver.findElement(By.xpath("// @id = yui_3_18_0_3_1551979203746_815"));
+		Thread.sleep(5000);
+		
+		List<WebElement> trennw = driver.findElements(By.xpath("//@class='trending-list selected'/href"));
+		
+		System.out.println(trennw.size());
+		
+		
+		
+		
+		
+		
+	}
+
+}

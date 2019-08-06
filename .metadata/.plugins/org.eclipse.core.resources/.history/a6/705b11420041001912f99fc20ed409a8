@@ -1,0 +1,22 @@
+package newStart;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Yahoo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "E:\\Classes\\Set up\\geckodriver-v0.24.0-win64.zip\\geckodriver-v0.24.0-win64");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://in.yahoo.com/");
+		driver.findElement(By.xpath("// @id = yui_3_18_0_3_1551979203746_815"));
+		
+		
+		
+		
+		
+	}
+
+}
